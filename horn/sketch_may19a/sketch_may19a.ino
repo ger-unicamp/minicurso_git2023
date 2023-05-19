@@ -32,17 +32,17 @@ void setup()
 
 void loop()
 {
-  while(Serial.available() == 0){
+  /*while(Serial.available() == 0){
     //loop até algo ser inputado
-  }
-  digitalWrite(vermelho,HIGH);
-  digitalWrite(verde,HIGH);
+  }*/
+  //digitalWrite(vermelho,HIGH);
+  //digitalWrite(verde,HIGH);
   String input = Serial.readString();
-  if(input == "on"){
+  
     long dist = read_ultrasonic_dist(A0,6);
     Serial.println(String(dist) + "cm");
     if(dist <= 10){
-      servo.write(45);
+      servo.write(90);
       //led verde e apaga o vermelho
       digitalWrite(verde,HIGH);
       digitalWrite(vermelho,LOW);
@@ -54,5 +54,5 @@ void loop()
       digitalWrite(verde,LOW);
       servo.write(0);
     }
-  }
+  
 }
