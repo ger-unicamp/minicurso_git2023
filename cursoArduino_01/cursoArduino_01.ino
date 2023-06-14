@@ -32,27 +32,6 @@ void loop() {
     fecharCancela();
   }
   delay(500);
-  // distancia = ultrasonic.distanceRead();
-  // Serial.println(distancia);
-  // if (distancia <= 10) {
-  //   digitalWrite(LED_R, LOW);
-  //   digitalWrite(LED_G, HIGH);
-  //   cancela.write(90);
-
-  //   while (distancia <= 10)
-  //   {
-  //     distancia = ultrasonic.distanceRead();
-  //     Serial.println(distancia);
-  //     delay(200);
-  //   }
-  //   digitalWrite(LED_G, LOW);
-  //   digitalWrite(LED_Y, HIGH);
-  //   delay(1000);
-  //   cancela.write(0);
-  //   digitalWrite(LED_Y, LOW);
-  //   digitalWrite(LED_R, HIGH);
-  // }
-  // delay(500);
 }
 
 int getDistancia()
